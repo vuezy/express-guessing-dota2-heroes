@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: 
+    linear-gradient(217deg, rgba(63, 17, 17, 0.8), rgba(63, 17, 17, 0) 70%),
+    linear-gradient(127deg, rgba(5, 40, 5, 0.8), rgba(5, 40, 5, 0) 70%),
+    linear-gradient(336deg, rgba(17, 17, 62, 0.8), rgba(17, 17, 62, 0) 70%);
+  font-family: "Comic Sans MS", sans;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.container {
+  position: relative;
+}
+
+.status {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  border: 5px dashed black;
+  padding: 2rem 2.5rem;
+  right: 5rem;
+  animation: changing-color 1s ease-in-out infinite alternate;
+}
+
+.status button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(104, 104, 193, 0.8);
+  border-radius: 4px;
+  padding: 0.2rem 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.status button:hover {
+  background-color: rgba(104, 104, 193, 0.5);
+}
+
+.game {
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  width: 470px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  margin: 0 auto;
+  border: 8px double black;
+}
+
+.hero-detail {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-detail .img{
+  width: 90px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 0 auto;
+}
+
+.attribute {
+  margin-right: 3rem;
+  border-right: 5px solid black;
+  padding-right: 3rem;
+}
+
+.attribute .img {
+  background-color: black;
+}
+
+.abilities {
+  width: 60%;
+}
+
+.abilities > h3 {
+  letter-spacing: 0.4rem;
+}
+
+.abilities-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.ability {
+  width: 25%;
+}
+
+.ability:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.ability h3 {
+  font-size: 1.2rem;
+}
+
+form {
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-bottom: 5rem;
+}
+
+.fas {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-xmark {
+  color: red;
+}
+
+.row:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 5rem;
+  height: 7rem;
+  line-height: 7rem;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0.2rem;
+}
+
+@keyframes changing-color {
+  100% {
+    border-color: white;
+  }
+}

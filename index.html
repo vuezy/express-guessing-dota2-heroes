@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Guessing Dota 2 Heroes</title>
+</head>
+<body>
+  <h1>Guessing Dota 2 Heroes</h1>
+  <h2>High Score: <span class="highscore">0</span></h2>
+  <div class="rules">
+    <h2>Rules:</h2>
+    <p>
+      The goal of the game is to correctly guess as many heroes as possible in 100 seconds.
+    </p>
+    <p>
+      For each question, the primary attribute and the first ability of the hero will be revealed.
+    </p>
+    <p>
+      The second, third, and ultimate abilities will be revealed consecutively after 3, 6, and 9 seconds.
+    </p>
+    <p>
+      After 12 seconds, the image of the hero will be shown.
+    </p>
+    <p>
+      You can skip the question after 7 seconds from when the question appears.
+    </p>
+    <div class="points">
+      <p>Point Calculation:</p>
+      <ul>
+        <li>&lt 6 seconds: +8 points</li>
+        <li>6-11 seconds: +5 points</li>
+        <li>&gt 11 seconds: +3 points</li>
+      </ul>
+    </div>
+  </div>
+  <form action="/" method="POST">
+    <input type="text" name="redirect" value="true">
+    <button>PLAY</button>
+    <h2 class="info">THE GAME WILL START IN <span id="secs">3</span> SECONDS</h2>
+  </form>
+</body>
+</html>
